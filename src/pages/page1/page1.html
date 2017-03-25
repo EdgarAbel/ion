@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page One</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-item>
+  <ion-icon name="ios-jet-outline" item-left>Airplane mode</ion-icon>
+  <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="ios-wifi" item-left>Wi-Fi</ion-icon>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="ios-bluetooth" item-left>Bluetooth</ion-icon>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="ios-play" item-left>Mobile data</ion-icon>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="ios-share-alt" item-left>Share internet</ion-icon>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="ios-call" item-left></ion-icon>
+    <ion-select [(ngModel)]="Operator">
+    <ion-option value="f" selected="true">Telcel</ion-option>
+    <ion-option value="m">Movistar</ion-option>
+    <ion-option value="o">T-Mobile</ion-option>
+    <ion-option value="r">AT & T</ion-option>
+  </ion-select>
+</ion-item>
+
+</ion-content>
